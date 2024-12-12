@@ -4,94 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт Аниматоров</title>
+    <link href="stile.css" rel="stylesheet">
 </head>
 <body>
       <!-- Шапка сайта -->
-    <header >
-        <div >
-            <div>Веселуха</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Персонажи</a></li>
-                    <li><a href="#" >Шоу-программы</a></li>
-                    <li><a href="#" >Цены</a></li>
-                    <li><a href="#">Контакты</a></li>
+      <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Веселуха</div>
+                <ul class="menu">
+                    <li><a href="#characters">Персонажи</a></li>
+                    <li><a href="#show-programs">Шоу-программы</a></li>
+                    <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
+                <div class="phone">8 (900) 987-00-32</div>
             </nav>
-            <div >8 (900) 987-00-32</div>
+            <div class="hero">
+                <h1>Детские праздники в Омске с профессиональными аниматорами!</h1>
+                <p>С нами ваш праздник пройдет весело, активно и незабываемо.</p>
+                <button class="btn-primary">Заказать праздник</button>
+            </div>
         </div>
     </header>
 
-    <!-- Баннер -->
     <section>
-        <div>
-            <h1>Детские праздники в Омске с профессиональными аниматорами!</h1>
-            <p >С нами ваш праздник пройдет весело, активно и незабываемо.</p>
-            <a href="#">Заказать праздник</a>
-        </div>
-    </section>
-
-    <!-- Категории -->
-    <section >
-        <div >
-            <div >
-                <div >
-                    <div>
-                        <div>Иконка 1</div>
-                        <p>Лучшие в Омске</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>Иконка 2</div>
-                        <p>Огромная гардеробная</p>
-                    </div>
-                </div>
-                <div>
-                    <div >
-                        <div>Иконка 3</div>
-                        <p>Авторские сценарии</p>
-                    </div>
-                </div>
+        <h2 class="section-title">Аниматоры <br> на детский праздник</h2>
+        <p class="section-subtitle">Ваш малыш всегда мечтал увидеться с супергероями? Или ваша дочка обожает<br> волшебных фей? Выберите аниматора, который превратит ваш праздник в <br>настоящую сказку!</p>
+        <div class="animators-grid">
+            <div class="animator-card">
+                <img src="img/персонажи/бэтмэн.jpg" alt="Бэтмен">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/гарипоттер.jpg" alt="Гарри Поттер">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/дедмороз.jpg" alt="Дед Мороз">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/джекварабей.jpg" alt="Джек Воробей">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/клоун.jpg" alt="Клоун">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/супермэн.jpg" alt="Супермен">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/человекпаук.jpg" alt="Человек-паук">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/фея.jpg" alt="Фея">
+                <button>Заказать</button>
+            </div>
+            <div class="animator-card">
+                <img src="img/персонажи/чудоженщина.jpg" alt="Чудо-женщина">
+                <button>Заказать</button>
             </div>
         </div>
     </section>
 
-  <!-- Аниматоры -->
-    <section >
-        <div >
-            <h2 >Аниматоры на детский праздник</h2>
-            <div >
-                <div >
-                    <div >
-                        <img src="#"  alt="Аниматор в костюме Бэтмена">
-                        <div >
-                            <h5 >Бэтмен</h5>
-                            <a href="#">Заказать</a>
-                        </div>
-                    </div>
-                </div>
-                <div >
-                    <div>
-                        <img src="#"  alt="Аниматор в костюме Гарри Поттера">
-                        <div>
-                            <h5 >Гарри Поттер</h5>
-                            <a href="#" >Заказать</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="#"  alt="Аниматор в костюме Санта-Клауса">
-                        <div >
-                            <h5 >Санта-Клаус</h5>
-                            <a href="#" >Заказать</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section >
         <div>
             <h2 >Шоу программы для детского праздника</h2>
