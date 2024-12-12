@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: 16px;
+    color: #666;
+}
+
+.animators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.animator-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.animator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.animator-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.animator-card button {
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.animator-card button:hover {
+    background-color: #7322b5;
+}
+
+.animator-card:nth-child(3n+1) {
+    border-color: #a7e200;
+}
+
+.animator-card:nth-child(3n+2) {
+    border-color: #ff4d6d;
+}
+
+.animator-card:nth-child(3n) {
+    border-color: #9b5de5;
+}
