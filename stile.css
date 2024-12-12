@@ -12,6 +12,10 @@ body {
     font-weight: bold;
 }
 
+h2 {
+    text-align: center;
+    color: #333;
+}
 .section-subtitle {
     text-align: center;
     margin: 0 0 40px;
@@ -28,6 +32,16 @@ body {
     padding: 0 20px;
 }
 
+.ardanimator-card {
+    flex: 1 1 calc(33.333% - 20px); /* Три карточки в ряд */
+    max-width: calc(33.333% - 20px);
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
 .animator-card {
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -73,4 +87,15 @@ body {
 
 .animator-card:nth-child(3n) {
     border-color: #9b5de5;
+}
+@media (max-width: 768px) {
+    .animator-card {
+        flex: 1 1 calc(50% - 20px); /* Две карточки в ряд на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .animator-card {
+        flex: 1 1 100%; /* Одна карточка в ряд на телефонах */
+    }
 }
