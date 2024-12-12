@@ -3,6 +3,129 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    color: #333;
+}
+
+
+
+.header {
+    background: url('img/главаня/фон.png') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffea00;
+}
+
+.phone {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #a7ff3d;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #8ecc31;
+}
+
+/* Feature section styles */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.feature {
+    text-align: center;
+    width: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.feature img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.features .wave {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 .section-title {
