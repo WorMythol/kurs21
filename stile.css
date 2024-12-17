@@ -309,9 +309,64 @@ footer p {
 }
 
 
+.facts-container {
+    max-width: 1200px; /* Увеличил ширину блока */
+    margin: 50px auto;
+    padding: 40px; /* Увеличил внутренние отступы */
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Увеличил расстояние между изображением и текстом */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.facts-image {
+    flex: 1;
+}
 
+.facts-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
+.facts-content {
+    flex: 2;
+    text-align: left;
+}
+
+.facts-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; /* Немного увеличил заголовок */
+}
+
+.facts-text {
+    font-size: 18px; /* Увеличил размер текста */
+    color: #333;
+    line-height: 1.8; /* Увеличил межстрочный интервал */
+    margin-bottom: 30px;
+}
+
+.facts-numbers {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px; /* Добавил отступ сверху */
+}
+
+.facts-numbers div {
+    font-size: 22px; /* Увеличил размер цифр */
+    font-weight: bold;
+}
+
+.facts-numbers span {
+    display: block;
+    font-size: 16px; /* Увеличил подписи под цифрами */
+    color: #555;
+    font-weight: normal;
+}
 
 
 /* Адаптивность */
@@ -360,5 +415,47 @@ footer p {
 @media (max-width: 600px) {
     .show-grid {
         grid-template-columns: 1fr; /* 1 колонка на экранах меньше 600px */
+    }
+}
+@media (max-width: 1200px) {
+    .facts-container {
+        flex-direction: column; /* Столбиком на средних экранах */
+        padding: 30px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .facts-container {
+        padding: 20px;
+        gap: 15px;
+    }
+    .facts-content h2 {
+        font-size: 24px;
+    }
+    .facts-text {
+        font-size: 16px;
+    }
+    .facts-numbers div {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .facts-container {
+        padding: 15px;
+    }
+    .facts-content h2 {
+        font-size: 20px;
+    }
+    .facts-text {
+        font-size: 14px;
+    }
+    .facts-numbers {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .facts-numbers div {
+        font-size: 16px;
     }
 }
