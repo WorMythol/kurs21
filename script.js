@@ -27,3 +27,23 @@ window.addEventListener('click', (event) => {
         closeModal();
     }
 });
+ const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('menu-open');
+            menuToggle.classList.toggle('menu-open');
+        });
+
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.menu li a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('menu-open');
+                menuToggle.classList.remove('menu-open');
+            });
+        });
+
+
+
+
+        
