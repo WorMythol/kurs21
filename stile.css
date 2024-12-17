@@ -174,8 +174,8 @@ img {
 
 
 .btn-primary {
-    background-color: #ffae42;
-    color: #000;
+    background-color: #6E03CC;
+    color: #ffffff;
     padding: 15px 30px;
     border-radius: 5px;
     font-weight: bold;
@@ -184,7 +184,7 @@ img {
 }
 
 .btn-primary:hover {
-    background-color: #e59436;
+    background-color: #883cca;
     transform: scale(1.05);
 }
 
@@ -721,9 +721,22 @@ input {
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 10px;
+
+    /* Плавный переход для всех изменений */
+    transition: all 0.3s ease-in-out;
 }
 
+.submit-btn:hover {
+    background-color: #075e79;
+    color: #6e057c;
+    transform: scale(1.05); /* Увеличение кнопки */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
+.submit-btn:active {
+    transform: scale(0.95); /* Эффект нажатия */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 
 
