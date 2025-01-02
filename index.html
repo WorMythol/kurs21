@@ -9,7 +9,7 @@
     <title>Сайт Аниматоров</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-</head>
+
 <body>
     <!-- Шапка сайта -->
     <header class="header">
@@ -48,6 +48,7 @@
             <p>Авторские сценарии</p>
         </div>
     </section>
+    
 
     <!-- Блок аниматоров -->
     <section id="characters">
@@ -143,6 +144,90 @@
         </div>
     </section>
 
+    <section id="pricing">
+        <div class="container">
+          <h1>Расчет стоимости детского праздника</h1>
+          <h2>В стандартной программе</h2>
+          <div class="program-list">
+            <div class="program-item"><span class="marker green"></span>Сценарий под персонажа</div>
+            <div class="program-item"><span class="marker red"></span>Вынос тортика</div>
+            <div class="program-item"><span class="marker purple"></span>Оригинальные конкурсы и игры</div>
+            <div class="program-item"><span class="marker green"></span>Дискотека с любимым героем</div>
+            <div class="program-item"><span class="marker red"></span>Яркий, тематический реквизит</div>
+            <div class="program-item"><span class="marker purple"></span>Время для фотосессии</div>
+            <div class="program-item"><span class="marker purple"></span>Музыкальное сопровождение</div>
+            <div class="program-item"><span class="marker red"></span>Торжественное поздравление</div>
+          </div>
+          <div class="info">
+            Продолжительность: <span id="duration">по запросу</span><br>
+            Стоимость: <span id="total-cost">0</span> ₽
+          </div>
+          <h2>Дополнительные услуги</h2>
+          <div class="services">
+            <label class="service-item">
+              <input type="checkbox" data-price="2000" />
+              Один аниматор на 60 минут (+2000 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="3000" />
+              Один аниматор на 90 минут (+3000 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="3500" />
+              Два аниматора на 60 минут (+3500 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="5000" />
+              Два аниматора на 90 минут (+5000 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="500" />
+              Фигурки из шариков (+500 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="1000" />
+              Аквагрим (+1000 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="3000" />
+              Бумажное шоу (+3000 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="1500" />
+              Маленькие пузыри (+1500 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="4000" />
+              Научное шоу (+4000 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="3000" />
+              Поролоновое шоу (+3000 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="2500" />
+              Шоу мыльных пузырей (+2500 ₽)
+            </label>
+            <label class="service-item">
+              <input type="checkbox" data-price="3500" />
+              Тематический квест (+3500 ₽)
+            </label>
+          </div>
+      
+          <div class="input-section">
+            <input type="text" placeholder="Ваше имя" id="user-name" />
+            <input type="tel" placeholder="Ваш телефон" id="user-phone" />
+            <button class="button" id="submit-button">Заказать программу</button>
+          </div>
+      
+          <div class="footer">
+            Я согласен(а) с <a href="#">Политикой конфиденциальности</a> сайта
+          </div>
+        </div>
+      </section>
+      
+
+
     <!-- Блок фактов о компании -->
     <div class="facts-container">
         <div class="facts-image">
@@ -154,9 +239,9 @@
                 "Веселуха" — ваш надежный партнер в организации незабываемых праздников! Мы создадим атмосферу веселья для детских мероприятий, подарив вашим детям море улыбок и радости. Позвольте нам сделать ваш праздник волшебным!
             </p>
             <div class="facts-numbers">
-                <div>+1000 <span>Мероприятий проведено</span></div>
-                <div>+100 <span>Мыльных пузырей запущено</span></div>
-                <div>+10 <span>Лет дарим праздники</span></div>
+                <div>+1000 </div><span class="faktsr">,Мероприятий проведено</span>
+                <div>+100 </div><span class="faktsr">Мыльных пузырей запущено</span>
+                <div>+10 </div><span class="faktsr">Лет дарим праздники</span>
             </div>
         </div>
     </div>
@@ -314,11 +399,12 @@
             <span id="closeModalBtn" class="close">&times;</span>
             <h2>Заказать праздник</h2>
             <p>Оставьте заявку и мы свяжемся с Вами в ближайшее время</p>
-            <form>
-                <input type="text" placeholder="Ваше имя..." required>
-                <input type="tel" placeholder="Ваш телефон..." required>
+            <form id="modal-form" method="post">
+                <input type="text" name="name" placeholder="Ваше имя..." required>
+                <input type="tel" name="phone" placeholder="Ваш телефон..." required>
                 <button type="submit" class="submit-btn">Заказать</button>
             </form>
+            
         </div>
     </div>
 
