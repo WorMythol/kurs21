@@ -952,3 +952,174 @@ button, .btn-primary, .btn-secondary {
  html {
     scroll-behavior: smooth; /* Плавный скролл */
 }
+
+
+
+
+
+/* Стили для блока расчета стоимости */
+#pricing .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  #pricing h1, #pricing h2 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+    color: rgba(149, 69, 216, 1);
+  }
+  
+  #pricing .program-list, #pricing .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  #pricing .program-item, #pricing .service-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    background: #e9f5ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 45%;
+  }
+  
+  #pricing .program-item .marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #pricing .marker.green {
+    background-color: #93e122;
+  }
+  
+  #pricing .marker.red {
+    background-color: #f83d3d;
+  }
+  
+  #pricing .marker.purple {
+    background-color: #a96bff;
+  }
+  
+  #pricing .service-item:hover {
+    background: #e0e0eb;
+  }
+  
+  #pricing .service-item input {
+    margin-right: 10px;
+  }
+  
+  #pricing .info {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  #pricing .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  #pricing .input-section input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #pricing .button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8c0ab4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  #pricing .button:hover {
+    background-color: #0096d6;
+  }
+  
+  #pricing .footer {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin: 20px 0;
+  }
+  
+  #pricing .footer a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  #pricing .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 1024px) {
+    #pricing .program-item, #pricing .service-item {
+      width: 48%; /* Для планшетов - чуть уже */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #pricing .program-item, #pricing .service-item {
+      width: 100%; /* Одна колонка на мобильных устройствах */
+    }
+  
+    #pricing .input-section input {
+      width: 100%; /* Полная ширина для полей ввода */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #pricing h1, #pricing h2 {
+      font-size: 22px; /* Уменьшение заголовков */
+    }
+  
+    #pricing .button {
+      padding: 10px 20px; /* Уменьшение кнопок */
+      font-size: 14px;
+    }
+  
+    #pricing .info {
+      font-size: 16px; /* Уменьшение текста */
+    }
+  }
+  
+
+
+
+
+
+  [data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  [data-aos="fade-up"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
